@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=Set Governor
+Icon=/usr/share/matrix-gui-2.0/apps/images/power-icon.png
+Exec=/html-apps/power-set-governor/set-governor.php
+Type=Application
+Categories=power
+ProgramType=web
+Name[en_US]=power-set-governor.desktop
