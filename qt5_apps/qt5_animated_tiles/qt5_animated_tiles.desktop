@@ -4,7 +4,7 @@
 Name=Animated Tiles
 GenericName=Demo App
 Icon=/usr/share/matrix-gui-2.0/apps/images/qt-icon.png
-Exec=/usr/share/qt5/examples/widgets/animation/animatedtiles/animatedtiles
+Exec=source read_system_env.sh ; /usr/share/qt5/examples/widgets/animation/animatedtiles/animatedtiles
 Type=Application
 Categories=Qt5
 ProgramType=gui

@@ -36,8 +36,7 @@
 governor=`cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor`
 if [ "$governor" = "ondemand" ]; then
 	echo "Power Management governor is currently set to ondemand."
-	echo "Temporarily setting governor to performance which will"
-    echo "insure the cpu will run at the max speed"
+	echo "Temporarily setting governor to performance which will insure the cpu will run at the max speed"
 	echo "performance" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 	echo ""
 	echo ""

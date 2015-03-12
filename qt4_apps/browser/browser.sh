@@ -13,5 +13,7 @@ if [ $? == 0 ]
 then
         /usr/bin/qtopia/demos/browser/browser -geometry $geo $*
 else
+export TSLIB_TSDEVICE=/dev/input/touchscreen0
+export QWS_MOUSE_PROTO=Tslib:/dev/input/touchscreen0
         /usr/bin/qtopia/demos/browser/browser -qws -geometry $geo $*
 fi

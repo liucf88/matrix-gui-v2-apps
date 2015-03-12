@@ -7,6 +7,8 @@ PIDFILE="/var/run/matrix-gui-2.0.pid"
 
 test -x "$matrixgui" || exit 0
 
+export TSLIB_TSDEVICE=/dev/input/touchscreen0
+export QWS_MOUSE_PROTO=Auto
 tsfile=/etc/pointercal
 
 case "$1" in
